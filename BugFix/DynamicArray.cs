@@ -20,8 +20,6 @@ namespace BugFix
             {
                 Resize(index);
             }
-
-            // Shift elements to make space for the new item
             for (int i = Count - 1; i >= index; i--)
             {
                 baseArray[i + 1] = baseArray[i];
@@ -37,6 +35,7 @@ namespace BugFix
             T[] temp = new T[newSize];
             Array.Copy(baseArray, temp, Count);
             baseArray = temp;
+            Count = sz;
         }
         // Indexer
         public T this[int index]
