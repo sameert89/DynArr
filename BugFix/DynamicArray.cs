@@ -7,7 +7,7 @@ namespace BugFix
         private T[] baseArray;
         public int Count { get; private set; }
 
-        public DynamicArray(int size)
+        public DynamicArray( uint size)
         {
             baseArray = new T[size];
             Count = 0;
