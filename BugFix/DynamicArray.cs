@@ -19,6 +19,7 @@ namespace BugFix
             if (index >= baseArray.Length)
             {
                 Resize(index);
+                resized = true;
             }
             for (int i = Count - 1; i >= index; i--)
             {
@@ -26,7 +27,7 @@ namespace BugFix
             }
 
             baseArray[index] = item;
-            Count++;
+            Count = baseArray.Length; 
         }
 
         private void Resize(int sz)
