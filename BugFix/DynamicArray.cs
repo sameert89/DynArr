@@ -19,7 +19,6 @@ namespace BugFix
             if (index >= baseArray.Length)
             {
                 Resize(index);
-                resized = true;
             }
             for (int i = Count - 1; i >= index; i--)
             {
