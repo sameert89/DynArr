@@ -39,7 +39,7 @@ namespace BugFix
             Count = sz;
         }
         // Indexer
-        public T this[int index]
+        public T this[uint index]
         {
             get
             {
